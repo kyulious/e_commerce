@@ -1,0 +1,279 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200&display=swap');
+*{
+    padding: 0px;
+    margin:  0px;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+/* header */
+.header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-left: 150px;
+}
+#logo{
+    width: 120px;
+    height: 20px;
+}
+.header>h3{
+    color: gray;
+    font-weight: light;
+    font-size: 16px;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+#cart{
+    width: 20px;
+    height: 20px;
+    float: right;
+    padding-left: 400px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+#avatar{
+    width: 40px;
+    height: 40px;   
+    left: -90px;
+    top: -5px;
+    position: relative;
+}
+
+
+
+
+
+#line{
+    border-bottom: 1.5px solid rgb(218, 218, 218);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    z-index: 2;
+    position: absolute;
+}
+
+/* main */
+
+.main{
+   
+    display: flex;
+    flex-direction: row;
+}
+#close{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 59%;
+    top: 5%;
+    display: none;
+    z-index: 1;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.album{
+    width: 500px;
+    height: 500px;
+    border-radius: 6%;
+    z-index: 1;
+    overflow: hidden;
+    left: 35%;
+    top: 10%;
+    position: absolute;
+    display: none; 
+}
+.images{
+    position: relative;
+    display: flex;
+    height: 500px;
+}
+#main1, #main2, #main3, #main4{
+    width: 500px;
+    height: 500px;
+}
+button, button:active, button:focus{
+    width: 50px;
+
+    border-radius: 50%;
+    outline: none;
+    background-color: #fff;
+    /* position: absolute;  */
+    height: 50px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+button:disabled{
+    background-color: rgb(199, 199, 199);
+} 
+.prebtn{
+
+    float: left;
+    left: 34%;
+    top: 33%;
+    position: absolute;
+}
+.nextbtn{
+
+    float: right;
+    position: absolute;
+    left: 59%;
+    top: 33%;
+}
+#btns{
+    display:none;
+}
+
+#images{
+    width: 50%;
+}
+#img1{
+    width: 430px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+    border-radius: 3%;
+}
+.thumbnail{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 100px;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+#tnl1{
+    margin-right: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+#tnl2{
+    margin-right: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+#tnl3{
+    margin-right: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+    color: rgb(54, 54, 54);
+}
+#tnl4{
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+/* detail */
+#detail{
+    position: relative;
+    left: 100px;
+    padding-top: 180px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+#detail>h3{
+    color: rgb(238, 135, 0);
+    font-weight: bolder;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+#detail>h1{
+    padding-top: 12px;
+    font-size: 40px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+#detail>h4{
+    color: rgb(172, 172, 172);
+    font-size: 15px;
+    padding-top: 20px;
+    line-height: 25px;
+}
+#price1{
+    color: #111;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-top: 23px;
+}
+#dis1{
+    border: 1px solid #ffe7bb;
+    background-color: #ffe7bb;
+    color: rgb(224, 146, 0);
+    font-weight: bolder;
+    padding-left: 6px;
+    padding-top: 2px;
+    border-radius: 5px;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    top: -31px;
+    left: 120px;
+}
+#listprice1{
+    color: gray;
+    font-weight: bolder;
+    text-decoration: line-through;
+}
+
+#amountbtn{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 5px;
+    height: 35px;
+    width: 120px;
+    background-color: rgb(241, 241, 241);
+    margin-top: 30px;
+}
+#minus{
+    width: 16px;
+    height: 7px;
+    padding-left: 15px;
+    padding-top: 14px;
+    cursor: pointer;
+}
+#amount{
+    font-weight: bolder;
+    padding-top: 8px;
+    padding-left: 25px;
+}
+#plus{
+    width: 16px;
+    height: 16px;
+    padding-top: 9px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+#btn1{
+    width: 200px;
+    height: 35px;
+    border: 1px solid orange;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 2px rgb(221, 221, 221);
+    margin-left: 170px;
+    margin-top: -37px;
+    float: left;
+    background-color: rgb(255, 123, 0);
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+#cart{
+    position: relative;
+    left: -130px;
+    top: 6px;
+    width: 15px;
+    height: 15px;
+
+}
+#btn1>div{
+    float: right;
+    font-size: 13px;
+    position: relative;
+    top: -9px;
+    left: -53px;
+}
