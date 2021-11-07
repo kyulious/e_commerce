@@ -124,6 +124,9 @@ button:disabled{
     left: 59%;
     top: 33%;
 }
+#ham{
+    display: none;
+}
 #btns{
     display:none;
 }
@@ -276,4 +279,79 @@ button:disabled{
     position: relative;
     top: -9px;
     left: -53px;
+}
+
+@media screen and (max-width: 1138px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .header >h3{
+        display: none;
+    }
+    .header #logo{
+        left: 80px;
+        position: relative;
+        top: 5px;
+        cursor: pointer;
+    }
+    #ham{
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 40px;
+        cursor: pointer;
+    }
+    #detail{
+        position: relative;
+        top: -100px;
+        left: 230px;
+    }
+    #btns{
+        display:none;
+    }
+    
+    .prebtn{
+
+        float: left;
+        left: 180px;
+        top: 360px;
+        position: absolute;
+    }
+    .nextbtn{
+    
+        float: right;
+        position: absolute;
+        left: 600px;
+        top: 360px;
+       
+    }
+   
+    .album{
+        width: 430px;
+        height: 430px;
+        border-radius: 6%;
+        z-index: 1;
+        overflow: hidden;
+        left: 200px;
+        top: 170px;
+        position: absolute;
+        display: none; 
+    }
+    #close{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 580px;
+        top: 110px;
+        display: none;
+        z-index: 1;
+        cursor: pointer;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
 }
