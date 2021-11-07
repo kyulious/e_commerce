@@ -303,9 +303,12 @@ button:disabled{
         left: 40px;
         cursor: pointer;
     }
+    .thumbnail{
+        display: none;
+    }
     #detail{
         position: relative;
-        top: -100px;
+        top: 0px;
         left: 230px;
     }
     #btns{
